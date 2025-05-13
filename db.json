@@ -1,0 +1,330 @@
+{
+  "workers": [
+    {
+      "id": "1",
+      "name": "Jane Smith",
+      "profilePicture": "...",
+      "jobTitle": "Encanadora Especialista",
+      "skills": [
+        "Encanamento",
+        "Reparos"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Carlos Alberto",
+      "profilePicture": "...",
+      "jobTitle": "Eletricista Certificado",
+      "skills": [
+        "Elétrica",
+        "Diagnóstico"
+      ]
+    }
+  ],
+  "ratings": [
+    {
+      "id": "rating001",
+      "workerId": "1",
+      "customerId": "userLogadoId",
+      "customerName": "Mariana Costa",
+      "customerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      "serviceId": "serv001",
+      "stars": 5,
+      "comment": "A Jane foi incrível! Resolveu meu vazamento super rápido e foi muito profissional. Recomendo demais!",
+      "date": "2024-05-10T14:30:00.000Z"
+    },
+    {
+      "id": "rating002",
+      "workerId": "1",
+      "customerId": "userOutroId",
+      "customerName": "Pedro Almeida",
+      "customerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      "serviceId": "serv002",
+      "stars": 4,
+      "comment": "Bom serviço, atendeu às expectativas. Apenas um pequeno atraso na chegada.",
+      "date": "2024-05-08T10:15:00.000Z"
+    },
+    {
+      "id": "rating003",
+      "workerId": "2",
+      "customerId": "userLogadoId",
+      "customerName": "Mariana Costa",
+      "customerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      "serviceId": "serv003",
+      "stars": 5,
+      "comment": "Carlos fez um ótimo trabalho na instalação elétrica. Muito competente e organizado.",
+      "date": "2024-04-20T09:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "userLogadoId", 
+      "name": "Mariana Costa",
+      "email": "mariana.costa@example.com", 
+      "password": "password123",         
+      "role": "user",                     
+      "profilePicture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+    },
+    {
+      "id": "userWorker1Id", 
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",   
+      "password": "passwordworker",        
+      "role": "worker",                   
+      "profilePicture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+    },
+    {
+      "id": "userWorker2Id",
+      "name": "Carlos Alberto",
+      "email": "carlos.alberto@example.com", 
+      "password": "password456",           
+      "role": "worker",                   
+      "profilePicture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+    },
+    {
+      "id": "userCliente2Id", 
+      "name": "Pedro Almeida",
+      "email": "pedro.almeida@example.com", 
+      "password": "password789",         
+      "role": "user",                     
+      "profilePicture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat1",
+      "participantIds": [
+        "userLogadoId",
+        "userWorker1Id"
+      ],
+      "participantsInfo": {
+        "userLogadoId": {
+          "name": "Mariana Costa",
+          "profilePicture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        },
+        "userWorker1Id": {
+          "name": "Jane Smith",
+          "profilePicture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        }
+      },
+      "lastMessage": "Vem logo",
+      "lastMessageTimestamp": "2025-05-13T03:27:47.907Z",
+      "unreadCount": {
+        "userLogadoId": 1,
+        "userWorker1Id": 1
+      }
+    },
+    {
+      "id": "chat2",
+      "participantIds": [
+        "userLogadoId",
+        "userWorker2Id"
+      ],
+      "participantsInfo": {
+        "userLogadoId": {
+          "name": "Mariana Costa",
+          "profilePicture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        },
+        "userWorker2Id": {
+          "name": "Carlos Alberto",
+          "profilePicture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        }
+      },
+      "lastMessage": "Você pode vir amanhã?",
+      "lastMessageTimestamp": "2025-05-13T09:15:00.000Z",
+      "unreadCount": {
+        "userLogadoId": 2,
+        "userWorker2Id": 0
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg1",
+      "chatId": "chat1",
+      "senderId": "userLogadoId",
+      "receiverId": "userWorker1Id",
+      "content": "Olá Jane, tudo bem? Preciso de um orçamento.",
+      "timestamp": "2025-05-12T15:28:00.000Z"
+    },
+    {
+      "id": "msg2",
+      "chatId": "chat1",
+      "senderId": "userWorker1Id",
+      "receiverId": "userLogadoId",
+      "content": "Olá Mariana! Tudo bem. Claro, do que você precisa?",
+      "timestamp": "2025-05-12T15:29:00.000Z"
+    },
+    {
+      "id": "msg3",
+      "chatId": "chat1",
+      "senderId": "userLogadoId",
+      "receiverId": "userWorker1Id",
+      "content": "Tenho um vazamento na pia da cozinha.",
+      "timestamp": "2025-05-12T15:29:30.000Z"
+    },
+    {
+      "id": "msg4",
+      "chatId": "chat1",
+      "senderId": "userWorker1Id",
+      "receiverId": "userLogadoId",
+      "content": "Ok, combinado!",
+      "timestamp": "2025-05-12T15:30:00.000Z"
+    },
+    {
+      "id": "msg5",
+      "chatId": "chat2",
+      "senderId": "userWorker2Id",
+      "receiverId": "userLogadoId",
+      "content": "Serviço finalizado.",
+      "timestamp": "2025-05-13T09:14:00.000Z"
+    },
+    {
+      "id": "msg6",
+      "chatId": "chat2",
+      "senderId": "userWorker2Id",
+      "receiverId": "userLogadoId",
+      "content": "Fico no aguardo da avaliação.",
+      "timestamp": "2025-05-13T09:14:30.000Z"
+    },
+    {
+      "id": "msg7",
+      "chatId": "chat2",
+      "senderId": "userLogadoId",
+      "receiverId": "userWorker2Id",
+      "content": "Obrigada! Você pode vir amanhã?",
+      "timestamp": "2025-05-13T09:15:00.000Z"
+    }
+  ],
+  "servicos": [
+    {
+      "id": "1",
+      "title": "Consertar Vazamento na Torneira do Banheiro",
+      "description": "A torneira do banheiro está vazando e precisa de reparo ou substituição.",
+      "category": "Encanamento",
+      "location": "São Paulo, SP",
+      "date": "10 de Junho, 2023",
+      "status": "in-progress",
+      "workerName": "Miguel Pereira",
+      "workerAvatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      "workerId": "2"
+    },
+    {
+      "id": "2",
+      "title": "Pintar Paredes da Sala de Estar",
+      "description": "Necessito pintar as paredes da sala de estar. O ambiente tem aproximadamente 15x20 metros.",
+      "category": "Pintura",
+      "location": "Rio de Janeiro, RJ",
+      "date": "15 de Junho, 2023",
+      "status": "pending"
+    },
+    {
+      "id": "3",
+      "title": "Substituir Luminária da Cozinha",
+      "description": "Preciso substituir uma luminária antiga da cozinha por um novo modelo de pendente.",
+      "category": "Elétrica",
+      "location": "Curitiba, PR",
+      "date": "28 de Maio, 2023",
+      "status": "completed",
+      "workerName": "Sandra Johnson",
+      "workerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      "workerId": "3"
+    },
+    {
+      "id": "1af3",
+      "title": "Consertar torneira",
+      "description": "gigigidi",
+      "category": "Encanamento",
+      "location": "ali perto",
+      "date": "13 maio, 2025",
+      "status": "canceled",
+      "customerId": "nnqc8iomg",
+      "customerName": "Gustavo",
+      "createdAt": "2025-05-13T04:04:54.932Z"
+    },
+    {
+      "id": "9e2b",
+      "title": "adfasdfa",
+      "description": "asdfasdfadfa",
+      "category": "Elétrica",
+      "location": "asdfasdf",
+      "date": "13 maio, 2025",
+      "status": "canceled",
+      "customerId": "nnqc8iomg",
+      "customerName": "Gustavo",
+      "createdAt": "2025-05-13T04:11:38.956Z"
+    },
+    {
+      "id": "f33f",
+      "title": "sgasdfasd",
+      "description": "asfsasdfad",
+      "category": "Elétrica",
+      "location": "afdadf",
+      "date": "13 maio, 2025",
+      "status": "pending",
+      "customerId": "erpma7nnu",
+      "customerName": "Gustavo",
+      "createdAt": "2025-05-13T04:26:45.180Z"
+    },
+    {
+      "id": "1716",
+      "title": "akfdjaksdlfasdf",
+      "description": "asdfasdfasdfasdf",
+      "category": "Elétrica",
+      "location": "asdfasdf",
+      "date": "13 maio, 2025",
+      "status": "pending",
+      "customerId": "3ljkr7pk4",
+      "customerName": "Gustavo",
+      "createdAt": "2025-05-13T10:42:36.473Z"
+    }
+  ],
+  "serviceCategories": [
+    {
+      "id": "plumbing",
+      "name": "Encanamento"
+    },
+    {
+      "id": "electrical",
+      "name": "Elétrica"
+    },
+    {
+      "id": "cleaning",
+      "name": "Limpeza"
+    },
+    {
+      "id": "painting",
+      "name": "Pintura"
+    },
+    {
+      "id": "carpentry",
+      "name": "Carpintaria"
+    },
+    {
+      "id": "appliance",
+      "name": "Reparo de Eletrodomésticos"
+    },
+    {
+      "id": "landscaping",
+      "name": "Jardinagem"
+    },
+    {
+      "id": "mounting",
+      "name": "Montagem e Instalação"
+    }
+  ],
+  "statusLabels": {
+    "pending": "Pendente",
+    "in-progress": "Em Andamento",
+    "completed": "Concluído",
+    "available": "Disponível",
+    "canceled": "Cancelado"
+  },
+  "statusColors": {
+    "pending": "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
+    "in-progress": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+    "completed": "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+    "available": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
+    "canceled": "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+  }
+}
